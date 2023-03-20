@@ -141,7 +141,6 @@ msgstr "Presupuesto %s creado "
 #. module: business_requirement_sale
 #: model:ir.model,name:business_requirement_sale.model_sale_order
 #, fuzzy
-#| msgid "Sales Orders"
 msgid "Sale Order"
 msgstr "Pedidos de ventas"
 
@@ -195,3 +194,15 @@ msgstr ""
 #: model:ir.model,name:business_requirement_sale.model_business_requirement_create_sale
 msgid "Wizard to create new SO from requirement"
 msgstr "Asistente para crear nuevo PV desde el requisito"
+
+#~ msgid "Quotation"
+#~ msgstr "Presupuesto"
+
+#~ msgid "Sales Layout Category"
+#~ msgstr "Sección de ventas"
+
+#~ msgid "business.requirement.deliverable.section"
+#~ msgstr "business.requirement.deliverable.section"
+
+#~ msgid "sale.layout_category"
+#~ msgstr "sale.layout_category"

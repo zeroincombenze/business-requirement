@@ -10,4 +10,3 @@
   * Alexandre Diaz
   * Pedro M. Baeza
   * Victor M.M. Torres
-  * Víctor Martínez

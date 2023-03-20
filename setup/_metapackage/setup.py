@@ -4,19 +4,19 @@ with open('VERSION.txt', 'r') as f:
     version = f.read().strip()
 
 setuptools.setup(
-    name="odoo14-addons-oca-business-requirement",
+    name="odoo12-addons-oca-business-requirement",
     description="Meta package for oca-business-requirement Odoo addons",
     version=version,
     install_requires=[
-        'odoo14-addon-business_requirement',
-        'odoo14-addon-business_requirement_crm',
-        'odoo14-addon-business_requirement_deliverable',
-        'odoo14-addon-business_requirement_sale',
-        'odoo14-addon-business_requirement_sale_timesheet',
+        'odoo12-addon-business_requirement',
+        'odoo12-addon-business_requirement_crm',
+        'odoo12-addon-business_requirement_deliverable',
+        'odoo12-addon-business_requirement_sale',
+        'odoo12-addon-business_requirement_sale_timesheet',
     ],
     classifiers=[
         'Programming Language :: Python',
         'Framework :: Odoo',
-        'Framework :: Odoo :: 14.0',
+        'Framework :: Odoo :: 12.0',
     ]
 )

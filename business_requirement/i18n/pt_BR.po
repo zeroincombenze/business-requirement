@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-03-21 20:13+0000\n"
+"PO-Revision-Date: 2020-03-21 19:13+0000\n"
 "Last-Translator: Rodrigo Macedo <rmsolucoeseminformatic4@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -102,19 +102,9 @@ msgid "Activities"
 msgstr "Atividades"
 
 #. module: business_requirement
-#: model:ir.model.fields,field_description:business_requirement.field_business_requirement__activity_exception_decoration
-msgid "Activity Exception Decoration"
-msgstr "Decoração de Exceção de Atividade"
-
-#. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__activity_state
 msgid "Activity State"
 msgstr "Situação da Atividade"
-
-#. module: business_requirement
-#: model:ir.model.fields,field_description:business_requirement.field_business_requirement__activity_type_icon
-msgid "Activity Type Icon"
-msgstr ""
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__approval_date
@@ -122,7 +112,7 @@ msgid "Approval Date"
 msgstr "Data de Aprovação"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__approved
+#: selection:business.requirement,state:0
 msgid "Approved"
 msgstr "Aprovado"
 
@@ -188,7 +178,7 @@ msgid "Business Requirements"
 msgstr "Requisitos de Negócio"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__cancel
+#: selection:business.requirement,state:0
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -221,7 +211,7 @@ msgid "Confirmation Date"
 msgstr "Data de Confirmação"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__confirmed
+#: selection:business.requirement,state:0
 msgid "Confirmed"
 msgstr "Confirmado"
 
@@ -268,7 +258,7 @@ msgid "Customer Story"
 msgstr "História do Cliente"
 
 #. module: business_requirement
-#: code:addons/business_requirement/controllers/portal.py:0
+#: code:addons/business_requirement/controllers/portal.py:60
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__date
 #: model_terms:ir.ui.view,arch_db:business_requirement.portal_my_br
 #, python-format
@@ -287,17 +277,17 @@ msgid "Display Name"
 msgstr "Nome Exibido"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__done
+#: selection:business.requirement,state:0
 msgid "Done"
 msgstr "Feito"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__draft
+#: selection:business.requirement,state:0
 msgid "Draft"
 msgstr "Rascunho"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__drop
+#: selection:business.requirement,state:0
 msgid "Drop"
 msgstr "Descartar"
 
@@ -317,11 +307,6 @@ msgid "Followers (Partners)"
 msgstr "Seguidores (Parceiros)"
 
 #. module: business_requirement
-#: model:ir.model.fields,help:business_requirement.field_business_requirement__activity_type_icon
-msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
-
-#. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__gap
 #: model_terms:ir.ui.view,arch_db:business_requirement.view_business_requirement_form
 msgid "Gap"
@@ -338,7 +323,7 @@ msgid "Group by"
 msgstr "Agrupado por"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__priority__2
+#: selection:business.requirement,priority:0
 msgid "High"
 msgstr "Alto"
 
@@ -349,24 +334,17 @@ msgid "ID"
 msgstr "ID"
 
 #. module: business_requirement
-#: model:ir.model.fields,field_description:business_requirement.field_business_requirement__activity_exception_icon
-msgid "Icon"
-msgstr "Ícone"
-
-#. module: business_requirement
-#: model:ir.model.fields,help:business_requirement.field_business_requirement__activity_exception_icon
-msgid "Icon to indicate an exception activity."
-msgstr "Ícone para indicar uma atividade de exceção."
+#: model:ir.model.fields,help:business_requirement.field_business_requirement__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Se marcada, novas mensagens requerem sua atenção."
 
 #. module: business_requirement
 #: model:ir.model.fields,help:business_requirement.field_business_requirement__message_needaction
-#: model:ir.model.fields,help:business_requirement.field_business_requirement__message_unread
 msgid "If checked, new messages require your attention."
 msgstr "Se marcada, novas mensagens requerem sua atenção."
 
 #. module: business_requirement
 #: model:ir.model.fields,help:business_requirement.field_business_requirement__message_has_error
-#: model:ir.model.fields,help:business_requirement.field_business_requirement__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se marcada, algumas mensagens apresentam erro de entrega."
 
@@ -376,12 +354,12 @@ msgid "In Portal"
 msgstr "No Portal"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__kanban_state__normal
+#: selection:business.requirement,kanban_state:0
 msgid "In Progress"
 msgstr "Em Progresso"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__state__in_progress
+#: selection:business.requirement,state:0
 msgid "In progress"
 msgstr "Em progresso"
 
@@ -419,7 +397,7 @@ msgid "Logs"
 msgstr "Registros"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__priority__0
+#: selection:business.requirement,priority:0
 msgid "Low"
 msgstr "Baixo"
 
@@ -437,11 +415,6 @@ msgstr "Mensagem de Erro de Entrega"
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__message_ids
 msgid "Messages"
 msgstr "Mensagens"
-
-#. module: business_requirement
-#: model:ir.model.fields,field_description:business_requirement.field_business_requirement__my_activity_date_deadline
-msgid "My Activity Deadline"
-msgstr ""
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__name
@@ -471,7 +444,7 @@ msgid "No"
 msgstr "Não"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__priority__1
+#: selection:business.requirement,priority:0
 msgid "Normal"
 msgstr "Normal"
 
@@ -482,8 +455,8 @@ msgstr "Número de Ações"
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__message_has_error_counter
-msgid "Number of errors"
-msgstr "Número de erros"
+msgid "Number of error"
+msgstr "Número de erro"
 
 #. module: business_requirement
 #: model:ir.model.fields,help:business_requirement.field_business_requirement__message_needaction_counter
@@ -515,7 +488,7 @@ msgstr ""
 "etc."
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__kanban_state__on_hold
+#: selection:business.requirement,kanban_state:0
 msgid "On Hold"
 msgstr "Em Mãos"
 
@@ -523,6 +496,11 @@ msgstr "Em Mãos"
 #: model_terms:ir.ui.view,arch_db:business_requirement.view_business_requirement_form
 msgid "Other"
 msgstr "Outro"
+
+#. module: business_requirement
+#: selection:business.requirement,activity_state:0
+msgid "Overdue"
+msgstr "Vencido"
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__user_id
@@ -533,6 +511,11 @@ msgstr "Dono"
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement_category__parent_id
 msgid "Parent Category"
 msgstr "Categoria Pai"
+
+#. module: business_requirement
+#: selection:business.requirement,activity_state:0
+msgid "Planned"
+msgstr "Planejado"
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__access_url
@@ -551,7 +534,7 @@ msgid "Products"
 msgstr "Produtos"
 
 #. module: business_requirement
-#: model:ir.model.fields.selection,name:business_requirement.selection__business_requirement__kanban_state__done
+#: selection:business.requirement,kanban_state:0
 msgid "Ready for next stage"
 msgstr "Pronto para o próximo estágio"
 
@@ -577,11 +560,6 @@ msgid "Reviewers"
 msgstr "Revisores"
 
 #. module: business_requirement
-#: model:ir.model.fields,field_description:business_requirement.field_business_requirement__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "SMS de Erro de Entrega"
-
-#. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__scenario
 #: model_terms:ir.ui.view,arch_db:business_requirement.view_business_requirement_form
 msgid "Scenario"
@@ -598,7 +576,7 @@ msgid "Security Token"
 msgstr "Token de Segurança"
 
 #. module: business_requirement
-#: code:addons/business_requirement/controllers/portal.py:0
+#: code:addons/business_requirement/controllers/portal.py:61
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__sequence
 #, python-format
 msgid "Sequence"
@@ -658,7 +636,7 @@ msgid "Terms and Conditions:"
 msgstr "Termos e Condições:"
 
 #. module: business_requirement
-#: code:addons/business_requirement/tests/test_br.py:0
+#: code:addons/business_requirement/tests/test_br.py:27
 #, python-format
 msgid "Test Body"
 msgstr "Corpo de teste"
@@ -680,6 +658,12 @@ msgid "There are currently no business requirements for your account."
 msgstr "No momento, não há requisitos comerciais para sua conta."
 
 #. module: business_requirement
+#: code:addons/business_requirement/models/business.py:19
+#, python-format
+msgid "There is no default company for the current user!"
+msgstr "Não há empresa padrão para o usuário atual!"
+
+#. module: business_requirement
 #: model_terms:ir.ui.view,arch_db:business_requirement.portal_br_error
 msgid "There was an error processing this page."
 msgstr "Ocorreu um erro ao processar esta página."
@@ -691,9 +675,9 @@ msgid "To be Reviewed"
 msgstr "A ser Revisado"
 
 #. module: business_requirement
-#: model:ir.model.fields,help:business_requirement.field_business_requirement__activity_exception_decoration
-msgid "Type of the exception activity on record."
-msgstr "Tipo da atividade de exceção registrada."
+#: selection:business.requirement,activity_state:0
+msgid "Today"
+msgstr "Hoje"
 
 #. module: business_requirement
 #: model:ir.model.fields,field_description:business_requirement.field_business_requirement__message_unread
@@ -722,7 +706,7 @@ msgid "Yes"
 msgstr "Sim"
 
 #. module: business_requirement
-#: code:addons/business_requirement/models/business.py:0
+#: code:addons/business_requirement/models/business.py:229
 #, python-format
 msgid "You can only move to the following stage: draft/confirmed /cancel/drop."
 msgstr ""
@@ -730,7 +714,7 @@ msgstr ""
 "descartar."
 
 #. module: business_requirement
-#: code:addons/business_requirement/models/business.py:0
+#: code:addons/business_requirement/models/business.py:235
 #, python-format
 msgid "You can only move to the following stage: draft/confirmed/cancel/drop."
 msgstr ""
@@ -747,18 +731,3 @@ msgstr "]&amp;nbsp;"
 #: model_terms:ir.ui.view,arch_db:business_requirement.portal_br_success
 msgid "close"
 msgstr "fechado"
-
-#~ msgid "There is no default company for the current user!"
-#~ msgstr "Não há empresa padrão para o usuário atual!"
-
-#~ msgid "If checked new messages require your attention."
-#~ msgstr "Se marcada, novas mensagens requerem sua atenção."
-
-#~ msgid "Overdue"
-#~ msgstr "Vencido"
-
-#~ msgid "Planned"
-#~ msgstr "Planejado"
-
-#~ msgid "Today"
-#~ msgstr "Hoje"
